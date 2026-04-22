@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 4rem;
+  padding: 1rem;
+  background-color: var(--background);
+}
+
+.navbar > h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar > div {
+  display: flex;
+  flex: auto;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.navbar .active {
+  text-decoration: underline;
+}
+
+.navbar .navOpen {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  transition: color 0.2s;
+}
