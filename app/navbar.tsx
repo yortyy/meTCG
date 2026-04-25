@@ -19,5 +19,8 @@ export default function NavBar() {
         About
       </Link>
     </div>
+    <Link href="/ltsan" className={clsx(styles.login, { [styles.active]: pathname === '/ltsan' })}>
+      Login
+    </Link>
   </div>
 }
