@@ -12,7 +12,7 @@ const cards: Card[] = [
   {
     id: '1',
     type: 'Full-stack',
-    rarity: 4,
+    rarity: 1,
     colors: [colors.fs],
     name: 'DubCards',
     desc: 'DubCards is a University of Washington-themed trading card game where users can buy, sell, favorite, and trade digital cards with friends.',
@@ -27,7 +27,7 @@ const cards: Card[] = [
   {
     id: '2',
     type: 'Data-viz',
-    rarity: 3,
+    rarity: 2,
     colors: [colors.dv],
     name: "NBA's Intl. Players",
     desc: 'An interactive data visualization that allows users to explore statistical trends and insights regarding international players in the NBA.',
@@ -57,7 +57,7 @@ const cards: Card[] = [
   {
     id: '4',
     type: 'Front-end',
-    rarity: 3,
+    rarity: 2,
     colors: [colors.fe],
     name: 'Blitz Fantasy',
     desc: 'A web application that provides a complete fantasy football experience, serving up live NFL metrics and real-time league data for users.',
@@ -72,7 +72,7 @@ const cards: Card[] = [
   {
     id: '5',
     type: 'Full-stack',
-    rarity: 4,
+    rarity: 1,
     colors: [colors.fs],
     name: 'BALLER//BROWSER',
     desc: 'A fantasy basketball marketplace and lineup builder where users can browse, search, and purchase NBA players to assemble custom rosters.',

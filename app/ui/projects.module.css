@@ -262,6 +262,13 @@
   right: 10%;
 }
 
+.cardFront > .starLogo {
+  position: absolute;
+  left: 5.2cqw;
+  bottom: 2.7cqw;
+  width: 10cqw;
+}
+
 .cardBack {
   padding: 0 0.3cqw;
 }
@@ -280,18 +287,17 @@
 }
 
 .cardBack > .cardHeader > img {
-  height: 10cqw;
+  height: max(0.5em, 9cqw);
   width: auto;
-  margin-right: 2cqw;
-  border: solid 0.5px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: max(0.1rem, 2cqw);
 }
 
 .cardBack > .cardHeader > h1 {
   font-size: 9.2cqw;
   font-stretch: ultra-condensed;
   font-weight: light;
-  margin: 0.1em auto 0.1em 0;
+  margin: 0.1em auto 0.1em auto;
+  text-align: center;
 }
 
 .cardBack > .cardHeader > a > img {
@@ -302,15 +308,12 @@
 }
 
 .cardBack > .techGroup {
-  margin: 1cqw 0;
+  margin: 2cqw 0;
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 0.6cqw rgba(0, 0, 0, 0.20) solid;
   gap: 1.5cqw;
-  padding-left: 0.5cqw;
 }
 .cardBack > .techGroup > img {
   height: 8cqw;

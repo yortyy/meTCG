@@ -143,6 +143,10 @@ function CardFront({ cardData }: { cardData: CardType }) {
             </div>
             <hr className={projectsCSS.rightLine}></hr>
             <hr className={projectsCSS.leftLine}></hr>
+            <Image
+              src={`/images/ui/rarity-${cardData.rarity}.png`}
+              width={200} height={200}
+              alt={`Star icon`} className={projectsCSS.starLogo}/>
             <h1 className={figtree.className}>{cardData.type}</h1>
           </div>
 }
