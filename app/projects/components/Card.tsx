@@ -127,7 +127,7 @@ function TiltLayer({ setFlipped, children }: TiltLayerProps) {
 
 function CardFront({ cardData }: { cardData: CardType }) {
   return <div className={projectsCSS.cardFront} style={{ backgroundColor: cardData.colors[0] }}>
-            <h1 className={figtree.className}>{cardData.name}</h1>
+            <h1 style={cardData.id === '5' ? { fontSize: '9.2cqw', marginTop: '0.15em' } : undefined} className={figtree.className}>{cardData.name}</h1>
             <div className={projectsCSS.mainTechGroup}>
             {cardData.mainTech.map((name, index) => (
               <div key={cardData.name + index} className={projectsCSS.mainTech}>
@@ -162,14 +162,14 @@ function CardBack({ cardData }: { cardData: CardType}) {
 
   return <div className={projectsCSS.cardBack} style={{ backgroundColor: cardData.colors[0] }}>
             <div className={projectsCSS.cardHeader}>
-              <Image
-                src={`/images/cards/${cardData.id}/logo.png`}
-                width={27}
-                height={27}
-                alt={`Logo ${cardData.name}`}
-                className={projectsCSS.logo}
-              />
-              <h1 className={figtree.className}>{cardData.name}</h1>
+                <Image
+                  src={`/images/cards/${cardData.id}/logo.png`}
+                  width={27}
+                  height={27}
+                  alt={`Logo ${cardData.name}`}
+                  className={projectsCSS.logo}
+                />
+              <h1 style={cardData.id === '5' ? { fontSize: '8.2cqw' } : undefined} className={figtree.className}>{cardData.name}</h1>
               <a href={cardData.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/ui/link.png"
