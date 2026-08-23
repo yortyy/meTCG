@@ -1,16 +1,23 @@
-import Image from 'next/image';
 import bioCSS from '../ui/bio.module.css';
+
+import CardRow from './components/CardRow';
 
 import * as images from "@/public/images/personal";
 
 export default function Page() {
   return <div className='main main-tm'>
-      <h1 className={bioCSS.title}>i like ramen</h1>
-      <div className={bioCSS.imageDiv}>
-        <Image src={images.dbzRamen} alt="Kid Goku eating ramen." className={bioCSS.image}/>
-        <Image src={images.nrtRamen} alt="Kid Naruto eating ramen." className={bioCSS.image}/>
-        <Image src={images.dbzPower} alt="Goku going Super Saiyan." className={bioCSS.image}/>
-      </div>
+      <h1 className={bioCSS.title}>Career-wise, I've been:</h1>
+      <CardRow
+        sA="studying" imgA={images.dbzRamen}
+        sB="programming" imgB={images.nrtRamen}
+        sC="learning" imgC={images.dbzPower}
+      />
+      <h1 className={bioCSS.title}>For fun, I've been :</h1>
+      <CardRow
+        sA="anime" imgA={images.dbzSS}
+        sB="gaming" imgB={images.dbzRamen}
+        sC="sports" imgC={images.jcoleWh}
+      />
       <h1>this the bio</h1>
   </div>
 }

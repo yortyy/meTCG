@@ -22,6 +22,7 @@ export default function Page() {
 
   useEffect(() => {
     document.body.classList.toggle("bodyDim", !gameOn);
+    return () => { document.body.classList.remove("bodyDim"); };
   }, [gameOn]);
 
   useEffect(() => {
