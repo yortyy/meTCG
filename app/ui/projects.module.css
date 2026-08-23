@@ -154,7 +154,8 @@
   inset: 0;
   z-index: 10;
   width: calc(80vh * 350 / 500);
-  height: 80vh;
+  height: auto;
+  aspect-ratio: 280 / 400;
   margin: auto;
 
   display: flex;
@@ -359,16 +360,17 @@
 
 
 @media (max-width: 580px) {
+  .mainContent .deckContainer.gameOn {
+    top: 6rem;
+    right: calc(2.5cqw + 2px); /* 2px for box shadow */
+  }
   .handContainer {
+    top: 15rem;
+    padding: 0 2.5cqw;
     grid-template-columns: repeat(auto-fit, minmax(min(110px, 100%), 1fr));
     gap: 0.5rem;
   }
-  .cardContainer.chosen {
-    height: calc(80vw * 400 / 280);
+  .chosenCardMotionDiv {
     width: 80vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: none;
   }
 }
